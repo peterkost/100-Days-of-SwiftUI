@@ -8,41 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var order = Order()
+    @ObservedObject var orderWrap = OrderWrapper()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Picker("Select your cake type", selection: $order.type) {
+                    Picker("Select your cake type", selection: $orderWrap.order.type) {
                         ForEach(0..<Order.types.count) {
                             Text(Order.types[$0])
                         }
                     }
                     
-                    Stepper(value: $order.quantity, in: 3...20) {
-                        Text("Number of cakes: \(order.quantity)")
+                    Stepper(value: $orderWrap.order.quantity, in: 3...20) {
+                        Text("Number of cakes: \(orderWrap.order.quantity)")
                     }
                 }
                 
                 Section {
-                    Toggle(isOn: $order.specialRequestEnabled.animation()){
+                    Toggle(isOn: $orderWrap.order.specialRequestEnabled.animation()){
                         Text("Add special requests")
                     }
                     
-                    if order.specialRequestEnabled {
-                        Toggle(isOn: $order.extraFrosting){
+                    if orderWrap.order.specialRequestEnabled {
+                        Toggle(isOn: $orderWrap.order.extraFrosting){
                             Text("Add extra frosting")
                         }
                         
-                        Toggle(isOn: $order.addSprinkles){
+                        Toggle(isOn: $orderWrap.order.addSprinkles){
                             Text("Add extra sprinkles")
                         }
                     }
                 }
                 
                 Section {
-                    NavigationLink(destination: AddressView(order: order)) {
+                    NavigationLink(destination: AddressView(orderWrap: orderWrap)) {
                         Text("Delivery details")
                     }
                 }
