@@ -14,9 +14,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(habits.items) { habit in
-                    NavigationLink(destination: HabitDetailsView(habit: habit)) {
-                        Text(habit.name)
+                ForEach(habits.items.indices, id: \.self) { i in
+                    NavigationLink(destination: HabitDetailsView(habits: habits, habitIndex: i)) {
+                        Text("\(habits.items[i].name) at index \(i)")
                     }
                 }
                 .onDelete(perform: removeItems)

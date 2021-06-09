@@ -8,30 +8,30 @@
 import SwiftUI
 
 struct HabitDetailsView: View {
-    @ObservedObject var habit: HabitItem
+    @ObservedObject var habits: Habits
+    var habitIndex: Int
     
     var body: some View {
             Form {
                 Section(header: Text("count")) {
                     VStack(alignment: .center) {
-                        Stepper(value: $habit.count, in: 0...Int.max) {
-                            Text("\(habit.count) times")
+                        Stepper(value: $habits.items[habitIndex].count, in: 0...Int.max) {
+                            Text("\(habits.items[habitIndex].count) times")
                         }
                     }
                 }
                
                 Section(header: Text("description")) {
-                    Text(habit.description)
+                    Text(habits.items[habitIndex].description)
                 }
                 
             }
-            .navigationTitle(habit.name)
+            .navigationTitle(habits.items[habitIndex].name)
     }
 }
 
 struct HabitDetailsView_Previews: PreviewProvider {
-    static let habit = HabitItem(name: "Running", description: "I would like to start running 5km every day in the morning.")
     static var previews: some View {
-        HabitDetailsView(habit: habit)
+        HabitDetailsView(habits: Habits(), habitIndex: 0)
     }
 }
