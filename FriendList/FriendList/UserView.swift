@@ -8,47 +8,31 @@
 import SwiftUI
 
 struct UserView: View {
-    let user: User
-    let users: [User]
-    let friends: [User]
+    let cdUser: CDUser
     
     var body: some View {
         Form {
             Section(header: Text("About")) {
-                Text(user.about)
-                Text("\(user.age) years old.")
-                Text("Works at \(user.company)")
-                Text("Tags: \(user.tags.joined(separator: ", "))")
+                Text(cdUser.uwAbout)
+                Text("\(cdUser.uwAge) years old.")
+                Text("Works at \(cdUser.uwCompany)")
+                Text("Tags: \(cdUser.uwTags.joined(separator: ", "))")
             }
             
             Section(header: Text("Contact")) {
-                Text("Email: \(user.email)")
-                Text("Address: \(user.address)")
+                Text("Email: \(cdUser.uwEmail)")
+                Text("Address: \(cdUser.uwAddress)")
             }
             
             Section(header: Text("Friends")) {
-                ForEach(friends) { friend in
-                    NavigationLink(destination: UserView(user: friend, users: users)) {
-                        Text("\(friend.isActive ? "🟢" : "🔴") \(friend.name)")
+                ForEach(cdUser.friendArray) { friend in
+                    NavigationLink(destination: UserView(cdUser: friend)) {
+                        Text("\(friend.isActive ? "🟢" : "🔴") \(friend.uwName)")
                     }
                 }
             }
             
         }
-        .navigationBarTitle(user.name)
-    }
-    
-    init(user: User, users: [User]) {
-        self.user = user
-        self.users = users
-        
-        var matches = [User]()
-
-        for friend in user.friends {
-            if let match = users.first(where: { $0.id == friend.id }) {
-                matches.append(match)
-            }
-        }
-        self.friends = matches
+        .navigationBarTitle(cdUser.uwName)
     }
 }

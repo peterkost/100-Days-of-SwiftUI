@@ -13,6 +13,10 @@
 		905CC7162670E46A00C501AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905CC7152670E46A00C501AD /* Preview Assets.xcassets */; };
 		905CC71E2670E48600C501AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905CC71D2670E48600C501AD /* User.swift */; };
 		905CED252673522400D11F9C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905CED242673522400D11F9C /* UserView.swift */; };
+		90C870652674881D00268C23 /* FriendModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C870622674881D00268C23 /* FriendModel.xcdatamodeld */; };
+		90C870662674881D00268C23 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C870642674881D00268C23 /* PersistenceController.swift */; };
+		90C870692674903500268C23 /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C870672674903500268C23 /* CDUser+CoreDataClass.swift */; };
+		90C8706A2674903500268C23 /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C870682674903500268C23 /* CDUser+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		905CC7172670E46A00C501AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		905CC71D2670E48600C501AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		905CED242673522400D11F9C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		90C870632674881D00268C23 /* FriendModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendModel.xcdatamodel; sourceTree = "<group>"; };
+		90C870642674881D00268C23 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		90C870672674903500268C23 /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		90C870682674903500268C23 /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		905CC70D2670E46900C501AD /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				90C870622674881D00268C23 /* FriendModel.xcdatamodeld */,
+				90C870642674881D00268C23 /* PersistenceController.swift */,
+				90C870672674903500268C23 /* CDUser+CoreDataClass.swift */,
+				90C870682674903500268C23 /* CDUser+CoreDataProperties.swift */,
 				905CC70E2670E46900C501AD /* FriendListApp.swift */,
 				905CC7102670E46900C501AD /* ContentView.swift */,
 				905CED242673522400D11F9C /* UserView.swift */,
@@ -147,7 +159,11 @@
 				905CC7112670E46900C501AD /* ContentView.swift in Sources */,
 				905CC70F2670E46900C501AD /* FriendListApp.swift in Sources */,
 				905CC71E2670E48600C501AD /* User.swift in Sources */,
+				90C8706A2674903500268C23 /* CDUser+CoreDataProperties.swift in Sources */,
+				90C870692674903500268C23 /* CDUser+CoreDataClass.swift in Sources */,
+				90C870662674881D00268C23 /* PersistenceController.swift in Sources */,
 				905CED252673522400D11F9C /* UserView.swift in Sources */,
+				90C870652674881D00268C23 /* FriendModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +352,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90C870622674881D00268C23 /* FriendModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90C870632674881D00268C23 /* FriendModel.xcdatamodel */,
+			);
+			currentVersion = 90C870632674881D00268C23 /* FriendModel.xcdatamodel */;
+			path = FriendModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 905CC7032670E46900C501AD /* Project object */;
 }
