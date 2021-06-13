@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90337A532675E3220018E5A3 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A522675E3220018E5A3 /* MKPointAnnotation-Codable.swift */; };
+		90337A552675EBEA0018E5A3 /* UnlockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A542675EBEA0018E5A3 /* UnlockedView.swift */; };
 		90C870D12674CBFE00268C23 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C870D02674CBFE00268C23 /* BucketListApp.swift */; };
 		90C870D32674CBFE00268C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C870D22674CBFE00268C23 /* ContentView.swift */; };
 		90C870D52674CC0000268C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C870D42674CC0000268C23 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		90337A522675E3220018E5A3 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		90337A542675EBEA0018E5A3 /* UnlockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockedView.swift; sourceTree = "<group>"; };
 		90C870CD2674CBFE00268C23 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C870D02674CBFE00268C23 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		90C870D22674CBFE00268C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				90C870D02674CBFE00268C23 /* BucketListApp.swift */,
 				90C870D22674CBFE00268C23 /* ContentView.swift */,
+				90337A542675EBEA0018E5A3 /* UnlockedView.swift */,
 				90337A522675E3220018E5A3 /* MKPointAnnotation-Codable.swift */,
 				90C870E52674D45C00268C23 /* Result.swift */,
 				90C870DF2674CC4600268C23 /* MapView.swift */,
@@ -158,6 +161,7 @@
 				90C870D32674CBFE00268C23 /* ContentView.swift in Sources */,
 				90C870E42674D32B00268C23 /* EditView.swift in Sources */,
 				90C870E22674D2B900268C23 /* MKPointAnnotation-ObservableObject.swift in Sources */,
+				90337A552675EBEA0018E5A3 /* UnlockedView.swift in Sources */,
 				90C870E02674CC4600268C23 /* MapView.swift in Sources */,
 				90C870D12674CBFE00268C23 /* BucketListApp.swift in Sources */,
 			);
