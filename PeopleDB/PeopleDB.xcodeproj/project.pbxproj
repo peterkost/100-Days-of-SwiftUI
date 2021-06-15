@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90337A7E26760C920018E5A3 /* PeopleDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A7D26760C920018E5A3 /* PeopleDBApp.swift */; };
+		90337A8026760C920018E5A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A7F26760C920018E5A3 /* ContentView.swift */; };
+		90337A8226760C940018E5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90337A8126760C940018E5A3 /* Assets.xcassets */; };
+		90337A8526760C940018E5A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90337A8426760C940018E5A3 /* Preview Assets.xcassets */; };
+		90337A8D26760DCE0018E5A3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A8C26760DCE0018E5A3 /* Person.swift */; };
+		90337A912676116B0018E5A3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A8F2676116B0018E5A3 /* ImagePicker.swift */; };
+		90337A93267618DC0018E5A3 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A92267618DC0018E5A3 /* NewPersonView.swift */; };
+		90F45BCA26787A5100D201D4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F45BC926787A5100D201D4 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90337A7A26760C920018E5A3 /* PeopleDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90337A7D26760C920018E5A3 /* PeopleDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDBApp.swift; sourceTree = "<group>"; };
+		90337A7F26760C920018E5A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90337A8126760C940018E5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90337A8426760C940018E5A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90337A8626760C940018E5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90337A8C26760DCE0018E5A3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		90337A8F2676116B0018E5A3 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		90337A92267618DC0018E5A3 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
+		90F45BC926787A5100D201D4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90337A7726760C920018E5A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90337A7126760C920018E5A3 = {
+			isa = PBXGroup;
+			children = (
+				90337A7C26760C920018E5A3 /* PeopleDB */,
+				90337A7B26760C920018E5A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90337A7B26760C920018E5A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90337A7A26760C920018E5A3 /* PeopleDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90337A7C26760C920018E5A3 /* PeopleDB */ = {
+			isa = PBXGroup;
+			children = (
+				90337A8F2676116B0018E5A3 /* ImagePicker.swift */,
+				90337A92267618DC0018E5A3 /* NewPersonView.swift */,
+				90F45BC926787A5100D201D4 /* DetailView.swift */,
+				90337A7D26760C920018E5A3 /* PeopleDBApp.swift */,
+				90337A7F26760C920018E5A3 /* ContentView.swift */,
+				90337A8C26760DCE0018E5A3 /* Person.swift */,
+				90337A8126760C940018E5A3 /* Assets.xcassets */,
+				90337A8626760C940018E5A3 /* Info.plist */,
+				90337A8326760C940018E5A3 /* Preview Content */,
+			);
+			path = PeopleDB;
+			sourceTree = "<group>";
+		};
+		90337A8326760C940018E5A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				90337A8426760C940018E5A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90337A7926760C920018E5A3 /* PeopleDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90337A8926760C940018E5A3 /* Build configuration list for PBXNativeTarget "PeopleDB" */;
+			buildPhases = (
+				90337A7626760C920018E5A3 /* Sources */,
+				90337A7726760C920018E5A3 /* Frameworks */,
+				90337A7826760C920018E5A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeopleDB;
+			productName = PeopleDB;
+			productReference = 90337A7A26760C920018E5A3 /* PeopleDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90337A7226760C920018E5A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					90337A7926760C920018E5A3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 90337A7526760C920018E5A3 /* Build configuration list for PBXProject "PeopleDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90337A7126760C920018E5A3;
+			productRefGroup = 90337A7B26760C920018E5A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90337A7926760C920018E5A3 /* PeopleDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90337A7826760C920018E5A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90337A8526760C940018E5A3 /* Preview Assets.xcassets in Resources */,
+				90337A8226760C940018E5A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90337A7626760C920018E5A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90337A93267618DC0018E5A3 /* NewPersonView.swift in Sources */,
+				90F45BCA26787A5100D201D4 /* DetailView.swift in Sources */,
+				90337A8D26760DCE0018E5A3 /* Person.swift in Sources */,
+				90337A8026760C920018E5A3 /* ContentView.swift in Sources */,
+				90337A912676116B0018E5A3 /* ImagePicker.swift in Sources */,
+				90337A7E26760C920018E5A3 /* PeopleDBApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90337A8726760C940018E5A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90337A8826760C940018E5A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90337A8A26760C940018E5A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PeopleDB/Preview Content\"";
+				DEVELOPMENT_TEAM = JVD55J3QR7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PeopleDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kostin.PeopleDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90337A8B26760C940018E5A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PeopleDB/Preview Content\"";
+				DEVELOPMENT_TEAM = JVD55J3QR7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PeopleDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kostin.PeopleDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90337A7526760C920018E5A3 /* Build configuration list for PBXProject "PeopleDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90337A8726760C940018E5A3 /* Debug */,
+				90337A8826760C940018E5A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90337A8926760C940018E5A3 /* Build configuration list for PBXNativeTarget "PeopleDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90337A8A26760C940018E5A3 /* Debug */,
+				90337A8B26760C940018E5A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90337A7226760C920018E5A3 /* Project object */;
+}
