@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/LocationFetcher.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/MapView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/MKPointAnnotation-Codable.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/MKPointAnnotation-ObservableObject.swift">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import MapKit
 
 struct Person: Comparable, Codable {
     let name: String
     let pictureID: String
+    let location: CodableMKPointAnnotation
     
     static func < (lhs: Person, rhs: Person) -> Bool {
         lhs.name < rhs.name

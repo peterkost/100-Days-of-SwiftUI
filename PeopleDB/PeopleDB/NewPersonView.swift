@@ -15,7 +15,6 @@ struct NewPersonView: View {
     var body: some View {
             VStack {
                 ImagePicker(image: $image)
-                
                 HStack {
                     TextField("Name", text: $name)
                         .textFieldStyle(RoundedBorderTextFieldStyle())

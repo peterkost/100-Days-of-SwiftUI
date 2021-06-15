@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
     @State private var people = [Person]()
@@ -15,11 +16,13 @@ struct ContentView: View {
     @State private var newPersonName = ""
     @State private var newPersonImage: UIImage?
     
+    let locationFetcher = LocationFetcher()
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(people, id: \.self.pictureID) { person in
-                    NavigationLink(destination: DetailView(image: images[person.pictureID] ?? UIImage(systemName: "person.fill.questionmark")!, name: person.name)) {
+                    NavigationLink(destination: DetailView(image:  images[person.pictureID] ?? UIImage(systemName: "person.fill.questionmark")!, name: person.name, location: person.location)) {
                         HStack {
                             Image(uiImage: images[person.pictureID] ?? UIImage(systemName: "person.fill.questionmark")!)
                                 .resizable()
@@ -50,7 +53,14 @@ struct ContentView: View {
         guard let newPersonImage = newPersonImage else { return }
         
         let newImageID = UUID().uuidString
-        let newPerson = Person(name: newPersonName, pictureID: newImageID)
+        var coordinates = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+        if let realCoordinates = locationFetcher.lastKnownLocation {
+            coordinates = realCoordinates
+        }
+        let newLocation = CodableMKPointAnnotation()
+        newLocation.coordinate = coordinates
+        
+        let newPerson = Person(name: newPersonName, pictureID: newImageID, location: newLocation)
         
         people.append(newPerson)
         people.sort()
@@ -95,6 +105,7 @@ struct ContentView: View {
                 print(error)
             }
         }
+        locationFetcher.start()
     }
 }
 

@@ -15,6 +15,9 @@
 		90337A912676116B0018E5A3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A8F2676116B0018E5A3 /* ImagePicker.swift */; };
 		90337A93267618DC0018E5A3 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337A92267618DC0018E5A3 /* NewPersonView.swift */; };
 		90F45BCA26787A5100D201D4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F45BC926787A5100D201D4 /* DetailView.swift */; };
+		90F45BD026787F8C00D201D4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F45BCD26787F8C00D201D4 /* MapView.swift */; };
+		90F45BD126787F8C00D201D4 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F45BCF26787F8C00D201D4 /* MKPointAnnotation-Codable.swift */; };
+		90F45BD4267882C000D201D4 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F45BD3267882C000D201D4 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		90337A8F2676116B0018E5A3 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		90337A92267618DC0018E5A3 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 		90F45BC926787A5100D201D4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		90F45BCD26787F8C00D201D4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = "/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/MapView.swift"; sourceTree = "<absolute>"; };
+		90F45BCF26787F8C00D201D4 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MKPointAnnotation-Codable.swift"; path = "/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/MKPointAnnotation-Codable.swift"; sourceTree = "<absolute>"; };
+		90F45BD3267882C000D201D4 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationFetcher.swift; path = "/Users/kostin/Developer/100-Days-of-SwiftUI/PeopleDB/PeopleDB/LocationFetcher.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,11 @@
 			children = (
 				90337A8F2676116B0018E5A3 /* ImagePicker.swift */,
 				90337A92267618DC0018E5A3 /* NewPersonView.swift */,
+				90F45BCD26787F8C00D201D4 /* MapView.swift */,
+				90F45BCF26787F8C00D201D4 /* MKPointAnnotation-Codable.swift */,
 				90F45BC926787A5100D201D4 /* DetailView.swift */,
 				90337A7D26760C920018E5A3 /* PeopleDBApp.swift */,
+				90F45BD3267882C000D201D4 /* LocationFetcher.swift */,
 				90337A7F26760C920018E5A3 /* ContentView.swift */,
 				90337A8C26760DCE0018E5A3 /* Person.swift */,
 				90337A8126760C940018E5A3 /* Assets.xcassets */,
@@ -150,11 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F45BD026787F8C00D201D4 /* MapView.swift in Sources */,
 				90337A93267618DC0018E5A3 /* NewPersonView.swift in Sources */,
+				90F45BD4267882C000D201D4 /* LocationFetcher.swift in Sources */,
 				90F45BCA26787A5100D201D4 /* DetailView.swift in Sources */,
 				90337A8D26760DCE0018E5A3 /* Person.swift in Sources */,
 				90337A8026760C920018E5A3 /* ContentView.swift in Sources */,
 				90337A912676116B0018E5A3 /* ImagePicker.swift in Sources */,
+				90F45BD126787F8C00D201D4 /* MKPointAnnotation-Codable.swift in Sources */,
 				90337A7E26760C920018E5A3 /* PeopleDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
