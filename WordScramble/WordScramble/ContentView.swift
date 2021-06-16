@@ -25,14 +25,21 @@ struct ContentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
                     .padding()
-                
-                List(usedWords, id: \.self) { word in
-                    HStack {
-                        Image(systemName: "\(word.count).circle")
-                        Text(word)
+                GeometryReader { listGeo in
+                    List(0..<usedWords.count, id: \.self) { i in
+                        GeometryReader { itemGeo in
+                            HStack {
+                                Image(systemName: "\(usedWords[i].count).circle")
+                                Text(usedWords[i])
+                            }
+                            .accessibilityElement(children: .ignore)
+                            .accessibility(label: Text("\(usedWords[i]), \(usedWords[i].count) letters"))
+                            .frame(width: itemGeo.size.width, alignment: .leading)
+                            .offset(x: getOffset(listGeo: listGeo, itemGeo: itemGeo), y: 0)
+                            .foregroundColor(getColor(listGeo: listGeo, itemGeo: itemGeo))
+                        }
+
                     }
-                    .accessibilityElement(children: .ignore)
-                    .accessibility(label: Text("\(word), \(word.count) letters"))
                 }
                 Text("Score: \(score)")
                     .font(.title)
@@ -48,6 +55,34 @@ struct ContentView: View {
                 )
 
         }
+    }
+    
+    func getOffset(listGeo: GeometryProxy, itemGeo: GeometryProxy) -> CGFloat {
+        let listHeight = listGeo.size.height
+        let listStart = listGeo.frame(in: .global).minY
+        let itemStart = itemGeo.frame(in: .global).minY
+
+        let itemPercent =  (itemStart - listStart) / listHeight * 100
+
+        let thresholdPercent: CGFloat = 60
+        let indent: CGFloat = 9
+
+        if itemPercent > thresholdPercent {
+            return (itemPercent - (thresholdPercent - 1)) * indent
+        }
+
+        return 0
+    }
+    
+    func getColor(listGeo: GeometryProxy, itemGeo: GeometryProxy) -> Color {
+        let listHeight = listGeo.size.height
+        let listStart = listGeo.frame(in: .global).minY
+        let itemStart = itemGeo.frame(in: .global).minY
+
+        let itemPercent = (itemStart - listStart) / listHeight * 100
+        let colorValue = Double(itemPercent / 100)
+        
+        return Color(red: 2 * colorValue, green: 2 * (1 - colorValue), blue: 0)
     }
     
     func addNewWord() {

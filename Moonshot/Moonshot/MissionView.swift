@@ -21,12 +21,17 @@ struct MissionView: View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
                 VStack {
-                    Image(mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.7)
-                        .padding(.top)
-                    
+                    GeometryReader { imageGeo in
+                        VStack {
+                            Image(mission.image)
+                                .resizable()
+                                .scaledToFit()
+                                .padding(.top)
+                                .frame(width: imageGeo.size.width, height: imageGeo.size.height)
+                                .scaleEffect(1 - scaleFactor(geometry: geometry, imageGeometry: imageGeo))
+                                .offset(x: 0, y: scaleFactor(geometry: geometry, imageGeometry: imageGeo) * imageGeo.size.height / 2)
+                        }
+                    }
                     Text(mission.formattedLaunchDate)
                         .padding()
                     
@@ -77,7 +82,14 @@ struct MissionView: View {
         self.astronauts = matches
     }
     
+    func scaleFactor(geometry: GeometryProxy, imageGeometry: GeometryProxy) -> CGFloat {
+        let imagePosition = imageGeometry.frame(in: .global).minY
+        let safeAreaHeight = geometry.safeAreaInsets.top
+
+        return (safeAreaHeight - imagePosition) / 500
+    }
 }
+    
 
 struct MissionView_Previews: PreviewProvider {
     static let missions: [Mission] = Bundle.main.decode("missions.json")
