@@ -27,7 +27,9 @@ struct Trapezoid: Shape {
 struct Parallelogram: View {
     var body: some View {
         Trapezoid()
+            .foregroundColor(.green)
             .frame(width: 200, height: 100)
+
     }
 }
 
